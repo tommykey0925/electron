@@ -11,6 +11,9 @@ function createWindow() {
   });
 
   win.loadFile('index.html');
+  
+  // 開発者ツールを自動的に開く
+  win.webContents.openDevTools();
 }
 
 app.whenReady().then(() => {
